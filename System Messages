@@ -1,0 +1,8 @@
+function SendSystemMessage(Message)
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = Message,
+        Font = Enum.Font.Cartoon,
+        Color = Color3.fromRGB(245, 206, 66),
+        FontSize = Enum.FontSize.Size96
+    })
+end
