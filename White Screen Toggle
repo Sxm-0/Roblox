@@ -19,12 +19,27 @@
 
 getgenv().xAPsdjXNVJbFSfYKIIS3T = 0
 
-while xAPsdjXNVJbFSfYKIIS3T do
 print("White Screen Toggle By Sinners - Waves#5693")
-xAPsdjXNVJbFSfYKIIS3T = xAPsdjXNVJbFSfYKIIS3T+1
-until xAPsdjXNVJbFSfYKIIS3T = 20
-task.wait()
-end
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
+print("White Screen Toggle By Sinners - Waves#5693")
 
 local UIS = game:GetService("UserInputService")
 
