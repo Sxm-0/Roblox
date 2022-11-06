@@ -1,0 +1,55 @@
+--[[
+
+
+░██████╗██╗███╗░░██╗███╗░░██╗███████╗██████╗░░██████╗  ░░░░██╗
+██╔════╝██║████╗░██║████╗░██║██╔════╝██╔══██╗██╔════╝  ░░░██╔╝
+╚█████╗░██║██╔██╗██║██╔██╗██║█████╗░░██████╔╝╚█████╗░  ░░██╔╝░
+░╚═══██╗██║██║╚████║██║╚████║██╔══╝░░██╔══██╗░╚═══██╗  ░██╔╝░░
+██████╔╝██║██║░╚███║██║░╚███║███████╗██║░░██║██████╔╝  ██╔╝░░░
+╚═════╝░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝╚═════╝░  ╚═╝░░░░
+
+░██╗░░░░░░░██╗░█████╗░██╗░░░██╗███████╗░██████╗░░░██╗░██╗░███████╗░█████╗░░█████╗░██████╗░
+░██║░░██╗░░██║██╔══██╗██║░░░██║██╔════╝██╔════╝██████████╗██╔════╝██╔═══╝░██╔══██╗╚════██╗
+░╚██╗████╗██╔╝███████║╚██╗░██╔╝█████╗░░╚█████╗░╚═██╔═██╔═╝██████╗░██████╗░╚██████║░█████╔╝
+░░████╔═████║░██╔══██║░╚████╔╝░██╔══╝░░░╚═══██╗██████████╗╚════██╗██╔══██╗░╚═══██║░╚═══██╗
+░░╚██╔╝░╚██╔╝░██║░░██║░░╚██╔╝░░███████╗██████╔╝╚██╔═██╔══╝██████╔╝╚█████╔╝░█████╔╝██████╔╝
+░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═════╝░░╚═╝░╚═╝░░░╚═════╝░░╚════╝░░╚════╝░╚═════╝░
+
+]]
+
+getgenv().xAPsdjXNVJbFSfYKIIS3T = 0
+
+while xAPsdjXNVJbFSfYKIIS3T do
+print("White Screen Toggle By Sinners - Waves#5693")
+xAPsdjXNVJbFSfYKIIS3T = xAPsdjXNVJbFSfYKIIS3T+1
+until xAPsdjXNVJbFSfYKIIS3T = 20
+task.wait()
+end
+
+local UIS = game:GetService("UserInputService")
+
+function Blank()
+local Holder = Instance.new("ScreenGui", game.CoreGui)
+Holder.Name = "2YFN4vwW7HUeIT60eq3lC_WhiteScreen"
+local Frame = Instance.new("Frame", Holder)
+Frame.Size = UDim2.new(9999,9999,9999)
+Frame.Visible = true
+Frame.BackgroundColor3 = Color3.fromRGB(255,255,255)
+end
+function RBlank()
+game.CoreGui["2YFN4vwW7HUeIT60eq3lC_WhiteScreen"]:Destroy()
+end
+
+local BlankState = false
+
+UIS.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.Q then
+		if BlankState then
+            RBlank()
+        else
+            Blank()
+        end	
+
+        BlankState = not BlankState
+    end
+end)
