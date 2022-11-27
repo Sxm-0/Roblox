@@ -26,7 +26,12 @@ end
   
 --[[
 Example of use:
-
+for _,v in pairs() do
+    if v ~= nil then
+       addEspUi(Path.Part)
+    end
+end
+    
 Path.ChildAdded:Connect(function(v)
   addEspUi(Path.Part)
 end)
