@@ -14,7 +14,7 @@ function addEspUi(part)
     nameGui.AlwaysOnTop = true
     nameGui.Name = "Name"
     local text = Instance.new("TextLabel", nameGui)
-    text.Text = part.Parent.,DisplayName.Value
+    text.Text = part.Parent.DisplayName.Value
     text.TextColor3 = Color3.fromRGB(255,0,0)
     text.TextTransparency = 0.25
     text.BackgroundTransparency = 1
