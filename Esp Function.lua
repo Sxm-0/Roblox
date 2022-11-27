@@ -17,7 +17,7 @@ function addEspUi(part)
     text.Text = part.Parent.,DisplayName.Value
     text.TextColor3 = Color3.fromRGB(255,0,0)
     text.TextTransparency = 0.25
-    text.BackgroundColor3 = 1
+    text.BackgroundTransparency = 1
     text.TextScaled = true
     text.Size = UDim2.new(1,0,1,0)
     text.Font = Enum.Font.Cartoon
