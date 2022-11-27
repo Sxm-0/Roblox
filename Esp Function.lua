@@ -1,9 +1,9 @@
 function addEspUi(part)
     local partGui = Instance.new("BillboardGui", part)
     partGui.Size = UDim2.new(1,0,1,0)
-    partGui.AlwaysOnTop true
+    partGui.AlwaysOnTop = true
     partGui.Name = "Sinner-ESP"
-    local frame = Instance.new("Frame), partGui)
+    local frame = Instance.new("Frame", partGui)
     frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
     frame.BackgroundTransparency = 0.75
     frame.Size = UDim2.new(1,0,1,0)
@@ -14,7 +14,7 @@ function addEspUi(part)
     nameGui.AlwaysOnTop = true
     nameGui.Name = "Name"
     local text = Instance.new("TextLabel", nameGui)
-    text.Text = part.Parent.DisplayName.Value
+    text.Text = part.Name
     text.TextColor3 = Color3.fromRGB(255,0,0)
     text.TextTransparency = 0.25
     text.BackgroundTransparency = 1
