@@ -1,0 +1,54 @@
+function Notification(Tex)
+    local SinnerHubNotification = Instance.new("ScreenGui", game.CoreGui)
+    SinnerHubNotification.Name = "Sinner Hub Notification"
+    local UTi2 = Instance.new("Frame", SinnerHubNotification)
+    UTi2.Name = "UTi2"
+    UTi2.Size = UDim2.new(0, 271, 0, 104)
+    UTi2.Visible = true
+    UTi2.Position = UDim2.new(0.739, 0, 0.751, 0)
+    UTi2.BackgroundColor3 = Color3.fromRGB(45,45,45)
+    local UICornerO = Instance.new("UICorner", UTi2)
+    UICornerO.Name = "UICorner_1"
+    local Timer = Instance.new("Frame", UTi2)
+    Timer.Size = UDim2.new(0, 255, 0, 21)
+    Timer.Position = UDim2.new(0.03, 0, 0.731, 0)
+    Timer.BackgroundColor3 = Color3.fromRGB(85,170,255)
+    Timer.Visible = true
+    local UICornerT = Instance.new("UICorner", Timer)
+    UICornerT.Name = "UICornerT"
+    local NotificationTitle = Instance.new("TextLabel", UTi2)
+    NotificationTitle.Name = "NotificationTitle"
+    NotificationTitle.Text = "Sinner Hub Notification"
+    NotificationTitle.TextColor3 = Color3.fromRGB(0,0,0)
+    NotificationTitle.TextSize = 18
+    NotificationTitle.Size = UDim2.new(0, 271, 0, 30)
+    NotificationTitle.Position = UDim2.new(0,0,0,0)
+    NotificationTitle.BackgroundColor3 = Color3.fromRGB(40,40,40)
+    NotificationTitle.Visible = true
+    local UICornerTH = Instance.new("UICorner", NotificationTitle)
+    UICornerTH.Name = "UICornerTH"
+    local Text = Instance.new("TextLabel", UTi2)
+    Text.Size = UDim2.new(0, 255, 0, 34)
+    Text.TextSize = 15
+    Text.Text = Tex
+    Text.TextColor3 = Color3.fromRGB(0,0,0)
+    Text.Visible = true
+    Text.BackgroundColor3 = Color3.fromRGB(40,40,40)
+    Text.Position = UDim2.new(0.03, 0, 0.346, 0)
+    local UICornerF = Instance.new("UICorner", Text)
+    UICornerF.Name = "UICornerF"
+
+	Timer.Size = UDim2.new(0, 255, 0, 21)
+	wait(1)
+	Timer.Size = UDim2.new(0, 204, 0, 21)
+	wait(1)
+	Timer.Size = UDim2.new(0, 154, 0, 21)
+	wait(1)
+	Timer.Size = UDim2.new(0, 103, 0, 21)
+	wait(1)
+	Timer.Size = UDim2.new(0, 52, 0, 21)
+	wait(1)
+	Timer.Size = UDim2.new(0, 00, 0, 21)
+	wait(1)
+	SinnerHubNotification:Destroy()
+end
