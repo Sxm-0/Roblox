@@ -517,8 +517,7 @@ Text_2.TextColor3 = Color3.new(1, 1, 1)
 Text_2.TextWrapped = true
 Text_2.ZIndex = 10
 table.insert(text1,Text_2)
-
-CloseButton.Name = "CloseButton"
+Button.Name = "CloseButton"
 CloseButton.Parent = Notification
 CloseButton.BackgroundTransparency = 1
 CloseButton.Position = UDim2.new(1, -20, 0, 0)
@@ -4647,9 +4646,6 @@ CMDs[#CMDs + 1] = {NAME = 'notifyping / ping', DESC = 'Notify yourself your ping
 CMDs[#CMDs + 1] = {NAME = 'trip', DESC = 'Makes your character fall over'}
 CMDs[#CMDs + 1] = {NAME = 'norender', DESC = 'Disable 3d Rendering to decrease the amount of CPU the client uses'}
 CMDs[#CMDs + 1] = {NAME = 'render', DESC = 'Enable 3d Rendering'}
--- // Custom CMDS
-CMDs[#CMDs + 1] = {NAME = 'close', DESC = 'Exit Roblox'}
--- \\
 wait()
 
 for i = 1, #CMDs do
@@ -11989,11 +11985,7 @@ end)
 addcmd('removecmd',{'deletecmd'},function(args, speaker)
 	removecmd(args[1])
 end)
--- // Custom CMDS Made By Why]3005
-addcmd('close',{},function(args, speaker)
-    game:Shutdown()
-end)
--- \\
+
 updateColors(currentShade1,shade1)
 updateColors(currentShade2,shade2)
 updateColors(currentShade3,shade3)
@@ -12223,3 +12215,8 @@ coroutine.wrap(function()
 	IntroBackground:Destroy()
 	minimizeHolder()
 end)()
+
+CMDs[#CMDs + 1] = {NAME = 'close', DESC = 'Exit Roblox'}
+addcmd('close',{},function(args, speaker)
+    game:Shutdown()
+end)
